@@ -1,0 +1,1300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Best Buy Real Estate — Invest early. Choose wisely. Preserve value.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ivory:#F6F2EA;
+    --ivory-2:#EFEAE0;
+    --paper:#FBF8F2;
+    --ink:#14160F;
+    --ink-2:#2A2D24;
+    --muted:#6B6E61;
+    --line:#E4DFD2;
+    --forest:#20392A;
+    --forest-2:#16291E;
+    --moss:#5C7A4F;
+    --brass:#B38B4A;
+    --brass-2:#8E6B32;
+    --sand:#E8DFC9;
+    --card:#FFFFFF;
+    --shadow: 0 1px 0 rgba(20,22,15,.04), 0 10px 30px -18px rgba(20,22,15,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--ivory);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+  .serif{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-.01em}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+  /* ---------- NAV ---------- */
+  .nav-shell{position:sticky;top:0;z-index:50;background:rgba(246,242,234,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(228,223,210,.6)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-size:22px;font-weight:600;letter-spacing:-.02em}
+  .logo-mark{width:28px;height:28px;border-radius:8px;background:var(--forest);display:grid;place-items:center;color:var(--ivory);font-family:'Fraunces',serif;font-size:15px;font-weight:600}
+  .nav-links{display:flex;gap:36px;font-size:14.5px;color:var(--ink-2)}
+  .nav-links a{position:relative;padding:6px 0}
+  .nav-links a.active{color:var(--forest);font-weight:500}
+  .nav-links a.active::after{content:"";position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--brass)}
+  .nav-cta{display:flex;align-items:center;gap:10px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-size:14px;font-weight:500;border:1px solid transparent;cursor:pointer;transition:transform .2s ease,background .2s ease,color .2s ease;font-family:inherit;white-space:nowrap}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{background:#fff}
+  .btn-primary{background:var(--forest);color:var(--paper)}
+  .btn-primary:hover{background:var(--forest-2)}
+  .btn-dark{background:var(--ink);color:var(--paper)}
+  .btn-dark:hover{background:#000}
+  .btn-outline{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn-outline:hover{border-color:var(--ink)}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    margin:24px 32px 0;
+    border-radius:28px;
+    background:
+      radial-gradient(1100px 500px at 85% 15%, #E8E2D1 0%, transparent 60%),
+      radial-gradient(900px 400px at 15% 20%, #F1D9B8 0%, transparent 55%),
+      linear-gradient(180deg, #F9F4E8 0%, #F4EEDD 100%);
+    border:1px solid rgba(228,223,210,.7);
+    overflow:hidden;
+    position:relative;
+  }
+  .hero-inner{padding:64px 56px 0;text-align:center}
+  .hero-tag{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:999px;font-size:12.5px;color:var(--ink-2);margin-bottom:28px}
+  .hero-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--brass)}
+  h1.hero-title{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(44px, 6.2vw, 84px);line-height:1.02;letter-spacing:-.03em;margin:0 0 22px}
+  h1.hero-title em{font-style:italic;color:var(--forest);font-weight:500}
+  .hero-sub{max-width:620px;margin:0 auto 32px;color:var(--ink-2);font-size:17px;line-height:1.55}
+  .hero-actions{display:flex;gap:12px;justify-content:center;margin-bottom:40px;flex-wrap:wrap}
+  .hero-art{position:relative;margin-top:8px}
+  .hero-art svg{width:100%;display:block}
+
+  /* ---------- STATS STRIP ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:40px 56px 48px;border-top:1px solid rgba(228,223,210,.8)}
+  .stat .num{font-family:'Fraunces',serif;font-size:44px;font-weight:500;letter-spacing:-.02em;line-height:1}
+  .stat .lbl{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:96px 0}
+  section.tight{padding:72px 0}
+  .section-head{max-width:720px;margin-bottom:48px}
+  .section-head.center{margin:0 auto 56px;text-align:center}
+  h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(32px, 4.2vw, 54px);line-height:1.08;letter-spacing:-.02em;margin:10px 0 16px}
+  h2 em{font-style:italic;color:var(--forest)}
+  .lede{color:var(--ink-2);font-size:17px;line-height:1.55;max-width:560px}
+  .lede.center{margin:0 auto}
+
+  /* ---------- UNLOCK NUMBERS ---------- */
+  .split{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+  .split h2{font-size:clamp(34px, 3.6vw, 52px)}
+  .mini-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .mc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .mc.tall{grid-row:span 2;padding:0;min-height:340px;background:#2e3a28}
+  .mc.tall .photo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.6) 100%),repeating-linear-gradient(135deg,#3a4a33 0 10px,#425239 10px 20px)}
+  .mc.tall .photo-label{position:absolute;inset:auto 18px 18px;color:#fff}
+  .mc.tall .photo-label .ph-title{font-family:'Fraunces',serif;font-size:22px;letter-spacing:-.01em}
+  .mc.tall .photo-label .ph-meta{font-size:12.5px;opacity:.85;margin-top:4px;display:flex;gap:12px;align-items:center}
+  .mc.tall .ph-pill{position:absolute;top:18px;left:18px;background:rgba(255,255,255,.92);border-radius:999px;padding:6px 12px;font-size:11.5px;font-family:'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+  .mc.ai .ai-top{display:flex;align-items:center;justify-content:space-between}
+  .mc.ai .ai-logo{display:flex;align-items:center;gap:8px;font-family:'Fraunces',serif;font-size:15px}
+  .mc.ai .ai-chip{font-family:'JetBrains Mono',monospace;font-size:10.5px;padding:4px 8px;border-radius:999px;background:var(--sand);color:var(--ink-2);letter-spacing:.12em;text-transform:uppercase}
+  .mc.ai .ai-title{margin-top:18px;font-family:'Fraunces',serif;font-size:18px}
+  .mc.ai .ai-row{display:flex;gap:8px;margin-top:14px;align-items:center}
+  .mc.ai .ai-input{flex:1;height:34px;border-radius:10px;background:var(--ivory-2);border:1px solid var(--line)}
+  .mc.ai .ai-btn{height:34px;padding:0 14px;border-radius:10px;background:var(--moss);color:#fff;font-size:12px;display:inline-flex;align-items:center}
+  .mc.trust{display:flex;flex-direction:column;justify-content:space-between;min-height:160px}
+  .mc.trust .num{font-family:'Fraunces',serif;font-size:48px;font-weight:500;letter-spacing:-.02em}
+  .mc.trust .lbl{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+  .mc.trust .bulb{width:36px;height:36px;border-radius:50%;background:var(--moss);display:grid;place-items:center;color:#fff;font-size:16px;align-self:flex-start}
+
+  /* ---------- ADVANTAGES GRID ---------- */
+  .adv-grid{display:grid;grid-template-columns:2fr 1.1fr;gap:48px}
+  .adv-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .adv-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;min-height:170px;display:flex;flex-direction:column;gap:10px;transition:transform .2s ease,border-color .2s ease}
+  .adv-card:hover{transform:translateY(-2px);border-color:var(--brass)}
+  .adv-icon{width:40px;height:40px;border-radius:10px;background:var(--sand);display:grid;place-items:center;color:var(--forest)}
+  .adv-card h3{font-family:'Fraunces',serif;font-size:19px;font-weight:500;margin:4px 0 0;letter-spacing:-.01em}
+  .adv-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5}
+  .adv-right{display:flex;flex-direction:column;justify-content:space-between;padding:4px 0}
+  .adv-right p{color:var(--ink-2);font-size:16px;line-height:1.6;max-width:320px}
+
+  /* ---------- PROPERTIES ---------- */
+  .props-head{text-align:center;margin-bottom:48px}
+  .props-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .prop{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .prop:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .prop-img{aspect-ratio: 4/3;position:relative;background:var(--ivory-2);overflow:hidden}
+  .prop-img .badge{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.95);border-radius:999px;padding:6px 12px;font-size:11px;font-family:'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase}
+  .prop-img .fav{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;font-size:14px}
+  .prop-body{padding:22px}
+  .prop h3{font-family:'Fraunces',serif;font-size:20px;font-weight:500;margin:0 0 4px;letter-spacing:-.01em}
+  .prop .loc{color:var(--muted);font-size:13px;margin-bottom:14px;display:flex;align-items:center;gap:6px}
+  .prop .meta{display:flex;gap:14px;font-size:12.5px;color:var(--ink-2);padding-top:14px;border-top:1px solid var(--line)}
+  .prop .meta span{display:flex;align-items:center;gap:5px}
+  .prop-foot{display:flex;align-items:center;justify-content:space-between;padding:16px 22px 22px}
+  .prop .price{font-family:'Fraunces',serif;font-size:22px;color:var(--forest);font-weight:600}
+  .prop .price small{font-family:'Inter',sans-serif;font-size:12px;color:var(--muted);font-weight:400;margin-left:6px}
+  .prop .view{font-size:12.5px;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:#fff}
+  .prop .view:hover{border-color:var(--ink)}
+
+  /* ---------- STEPS ---------- */
+  .steps-section{background:linear-gradient(180deg,#EDE7D6 0%, #E8E0C8 100%);border-radius:28px;margin:0 32px;padding:80px 56px}
+  .steps-head{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;margin-bottom:48px;align-items:end}
+  .steps-head p{color:var(--ink-2);font-size:16px;line-height:1.6;max-width:360px}
+  .steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;position:relative}
+  .step{background:#fff;border:1px solid rgba(228,223,210,.8);border-radius:20px;padding:28px;position:relative;min-height:220px;display:flex;flex-direction:column;gap:12px}
+  .step-num{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--brass-2)}
+  .step-icon{width:44px;height:44px;border-radius:12px;background:var(--sand);display:grid;place-items:center;color:var(--forest);margin-bottom:4px}
+  .step h3{font-family:'Fraunces',serif;font-size:22px;font-weight:500;margin:0;letter-spacing:-.01em}
+  .step p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.55}
+  .step-arrow{position:absolute;top:50%;right:-22px;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;z-index:2;color:var(--forest)}
+  .step:last-child .step-arrow{display:none}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-head{text-align:center;margin-bottom:48px}
+  .testi-band{background:var(--forest);border-radius:28px;padding:72px 56px;color:var(--paper);position:relative;overflow:hidden}
+  .testi-band::before{content:"";position:absolute;top:-120px;right:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle, rgba(179,139,74,.25), transparent 70%)}
+  .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative}
+  .t-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:28px;backdrop-filter:blur(6px)}
+  .t-quote{font-family:'Fraunces',serif;font-size:19px;line-height:1.45;letter-spacing:-.01em;color:#F1ECDE}
+  .t-author{display:flex;align-items:center;gap:12px;margin-top:22px}
+  .t-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--brass),var(--brass-2));display:grid;place-items:center;color:#fff;font-family:'Fraunces',serif;font-size:16px;font-weight:600}
+  .t-name{font-size:14px;font-weight:500}
+  .t-role{font-size:12.5px;opacity:.7}
+  .t-stars{color:var(--brass);font-size:13px;margin-bottom:14px;letter-spacing:2px}
+
+  /* ---------- ABOUT ---------- */
+  .about{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+  .about-photo{aspect-ratio:4/5;border-radius:24px;background:
+    linear-gradient(180deg,rgba(20,22,15,0) 50%, rgba(20,22,15,.55) 100%),
+    repeating-linear-gradient(135deg,#2A2D24 0 14px,#1d1f18 14px 28px);
+    position:relative;overflow:hidden;border:1px solid var(--line)
+  }
+  .about-photo .caption{position:absolute;inset:auto 20px 20px;color:#fff}
+  .about-photo .caption .n{font-family:'Fraunces',serif;font-size:22px}
+  .about-photo .caption .r{font-size:12.5px;opacity:.8;margin-top:2px}
+  .about-photo .chip{position:absolute;top:18px;left:18px;background:rgba(255,255,255,.95);color:var(--ink);padding:6px 12px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  .about-body h2{margin-top:8px}
+  .cred-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+  .cred .n{font-family:'Fraunces',serif;font-size:32px;letter-spacing:-.02em}
+  .cred .l{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+  /* ---------- SERVICES ---------- */
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;transition:background .2s ease,color .2s ease}
+  .svc:hover{background:var(--forest);color:var(--paper)}
+  .svc:hover p{color:rgba(255,255,255,.75)}
+  .svc:hover .svc-arrow{background:var(--brass);color:#fff}
+  .svc h3{font-family:'Fraunces',serif;font-size:20px;font-weight:500;letter-spacing:-.01em;margin:14px 0 6px}
+  .svc p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5}
+  .svc-arrow{width:36px;height:36px;border-radius:50%;background:var(--ivory-2);display:grid;place-items:center;align-self:flex-start;transition:background .2s ease,color .2s ease}
+
+  /* ---------- CONTACT ---------- */
+  .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:56px;box-shadow:var(--shadow)}
+  .contact-info h2{margin-top:12px}
+  .contact-info ul{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-direction:column;gap:18px}
+  .contact-info li{display:flex;gap:14px;align-items:flex-start}
+  .ci-ico{width:38px;height:38px;border-radius:10px;background:var(--ivory-2);display:grid;place-items:center;color:var(--forest);flex-shrink:0}
+  .ci-k{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .ci-v{font-size:15.5px;margin-top:2px}
+  form.lead{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  form.lead .full{grid-column:span 2}
+  .field label{display:block;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font:inherit;font-size:14.5px;color:var(--ink);transition:border-color .2s ease}
+  .field textarea{min-height:120px;resize:vertical}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--forest);background:#fff}
+  .lead-submit{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:4px}
+  .lead-note{font-size:12.5px;color:var(--muted);line-height:1.45}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink);color:var(--paper);padding:72px 0 28px;margin-top:96px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .foot-brand .logo{color:var(--paper)}
+  .foot-brand p{color:rgba(255,255,255,.6);font-size:14px;line-height:1.6;margin-top:18px;max-width:320px}
+  .foot h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin:0 0 20px;font-weight:500}
+  .foot ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;font-size:14px;color:rgba(255,255,255,.85)}
+  .foot ul a:hover{color:var(--brass)}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:13px;color:rgba(255,255,255,.55)}
+  .socials{display:flex;gap:10px}
+  .socials a{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;transition:background .2s ease,border-color .2s ease}
+  .socials a:hover{background:var(--brass);border-color:var(--brass)}
+
+  /* ---------- CERULEAN FEATURED ---------- */
+  .cerulean-hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:64px}
+  .c-left h2 em{color:#3B7A9E;font-style:italic}
+  .c-pill-row{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+  .c-pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+  .c-pill b{font-family:'Fraunces',serif;font-weight:600;color:#3B7A9E;font-size:15px}
+  .c-hero-art{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:5/4;border:1px solid var(--line);box-shadow:var(--shadow)}
+  .c-badge-float{position:absolute;left:22px;bottom:22px;background:rgba(20,22,15,.78);backdrop-filter:blur(8px);padding:14px 18px;border-radius:14px}
+
+  .c-ss-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:64px}
+  .c-ss{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;position:relative}
+  .c-ss-ico{width:38px;height:38px;border-radius:10px;background:#DCE9F0;color:#2E5F80;display:grid;place-items:center;font-size:18px;margin-bottom:14px}
+  .c-ss-tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.2em;color:#3B7A9E;margin-bottom:6px}
+  .c-ss h4{font-family:'Fraunces',serif;font-size:18px;font-weight:500;margin:0 0 6px;letter-spacing:-.01em}
+  .c-ss p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+
+  .c-two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .c-feature-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px}
+  .c-feature-card.alt{background:linear-gradient(160deg,#2E5F80 0%, #1c3e55 100%);color:#fff;border:none}
+  .c-feature-card.alt em{color:#E8D08A;font-style:italic}
+  .c-list{list-style:none;padding:0;margin:14px 0 20px;display:flex;flex-direction:column;gap:8px;font-size:14.5px;color:var(--ink-2)}
+  .c-list li b{font-family:'Fraunces',serif;color:#3B7A9E;display:inline-block;width:68px}
+  .c-list.small{font-size:13.5px;color:var(--muted)}
+  .c-list.small li{padding-left:14px;position:relative}
+  .c-list.small li::before{content:"◆";color:#B38B4A;font-size:8px;position:absolute;left:0;top:6px}
+  .c-list-title{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+  .c-invest-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15)}
+  .c-invest-stats .cn{font-family:'Fraunces',serif;font-size:28px;letter-spacing:-.02em}
+  .c-invest-stats .cl{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin-top:4px}
+
+  .c-models{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+  .c-model{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+  .c-model:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .c-model-art{aspect-ratio:5/3;background:#EEF4F8;overflow:hidden}
+  .c-model-art.alt{background:#F2EADF}
+  .c-model-body{padding:28px}
+  .c-model-tag{color:var(--muted);font-size:14px;line-height:1.5;margin:0 0 18px}
+  .c-specs{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .cs-k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .cs-v{font-family:'Fraunces',serif;font-size:17px;margin-top:3px}
+  .c-feat{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+  .c-feat span{font-size:11.5px;padding:5px 10px;border-radius:999px;background:var(--ivory-2);color:var(--ink-2)}
+
+  .c-cta-band{margin-top:40px;background:linear-gradient(120deg,#14160F 0%, #2a3d32 100%);border-radius:24px;padding:36px 40px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+  .c-cta-band em{color:#E8D08A;font-style:italic}
+
+  @media (max-width: 960px){
+    .cerulean-hero,.c-two-col,.c-models{grid-template-columns:1fr}
+    .c-ss-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width: 640px){
+    .c-ss-grid{grid-template-columns:1fr}
+    .c-invest-stats{grid-template-columns:1fr 1fr}
+    .c-specs{grid-template-columns:1fr}
+  }
+
+  /* ---------- FLOATING ---------- */
+  .floating{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+  .fab{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 10px 30px -10px rgba(0,0,0,.3);cursor:pointer;transition:transform .2s ease}
+  .fab:hover{transform:translateY(-2px)}
+  .fab.wa{background:#25D366}
+  .fab.ms{background:#0078FF}
+  .fab.main{background:var(--ink);width:auto;padding:0 22px;border-radius:999px;height:54px;gap:10px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500}
+
+  /* ---------- TWEAKS PANEL ---------- */
+  .tweaks{position:fixed;right:22px;top:100px;width:280px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 20px 50px -20px rgba(0,0,0,.25);padding:18px;z-index:90;font-size:13px;display:none}
+  .tweaks.open{display:block}
+  .tweaks h5{font-family:'Fraunces',serif;font-size:16px;font-weight:500;margin:0 0 14px}
+  .tweak-row{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+  .tweak-row label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+  .swatches{display:flex;gap:8px}
+  .swatch{width:30px;height:30px;border-radius:50%;border:2px solid transparent;cursor:pointer;transition:border-color .15s}
+  .swatch.on{border-color:var(--ink)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 960px){
+    .wrap{padding:0 20px}
+    .hero{margin:16px;padding:0}
+    .hero-inner{padding:40px 22px 0}
+    .stats{grid-template-columns:1fr 1fr;padding:28px}
+    .nav-links{display:none}
+    .split,.adv-grid,.about,.contact,.steps-head{grid-template-columns:1fr;gap:32px}
+    .adv-cards,.props-grid,.steps,.svc-grid,.t-grid,.foot-grid{grid-template-columns:1fr 1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .steps-section{margin:0 16px;padding:48px 24px}
+    .step-arrow{display:none !important}
+    .contact{padding:32px}
+    form.lead{grid-template-columns:1fr}
+    form.lead .full{grid-column:auto}
+  }
+  @media (max-width: 640px){
+    .props-grid,.svc-grid,.t-grid,.steps,.adv-cards{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .cred-row{grid-template-columns:1fr 1fr}
+    h1.hero-title{font-size:38px}
+    h2{font-size:30px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<div class="nav-shell">
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="logo-mark">B</span>Best Buy</a>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#cerulean">Cerulean</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#">Sign in</a>
+      <a class="btn btn-primary" href="#contact">Book a consult</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-tag"><span class="dot"></span> Dexter Soriano · Licensed real estate professional · 15 years in the Philippine market</div>
+    <h1 class="hero-title">Invest early.<br/>Choose <em>wisely</em>. Live well.</h1>
+    <p class="hero-sub">Best Buy Real Estate helps buyers, investors, families, OFWs and first-time property seekers make smart property decisions that preserve the value of their money — in Metro Manila and across the Philippines.</p>
+    <div class="hero-actions">
+      <a class="btn btn-outline" href="#properties">Browse properties</a>
+      <a class="btn btn-dark" href="#contact">Book a free consult →</a>
+    </div>
+  </div>
+
+  <!-- City skyline illustration -->
+  <div class="hero-art">
+    <svg viewBox="0 0 1400 360" preserveAspectRatio="xMidYEnd meet" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#F6ECD6"/>
+          <stop offset="1" stop-color="#F2E7CE" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="1400" height="360" fill="url(#sky)"/>
+
+      <!-- distant hills -->
+      <path d="M0 300 Q 200 250 400 290 T 800 280 T 1200 290 T 1400 295 L 1400 360 L 0 360 Z" fill="#E6DFCB" opacity=".7"/>
+
+      <!-- city outlines -->
+      <g stroke="#2A2D24" stroke-width="1.2" fill="none" stroke-linejoin="round">
+        <!-- left cluster -->
+        <path d="M40 320 L40 230 L90 230 L90 260 L130 260 L130 210 L180 210 L180 280 L220 280 L220 180 L260 180 L260 170 L300 170 L300 220 L340 220 L340 250 L380 250 L380 200 L420 200 L420 320"/>
+        <!-- windows left -->
+        <g stroke-width=".8">
+          <path d="M50 245 L80 245 M50 260 L80 260 M50 275 L80 275 M50 290 L80 290 M50 305 L80 305"/>
+          <path d="M145 225 L170 225 M145 240 L170 240 M145 255 L170 255 M145 270 L170 270"/>
+          <path d="M195 225 L210 225 M195 245 L210 245 M195 265 L210 265"/>
+          <path d="M235 195 L255 195 M235 215 L255 215 M235 240 L255 240 M235 265 L255 265"/>
+          <path d="M315 235 L335 235 M315 255 L335 255 M315 275 L335 275"/>
+          <path d="M395 215 L415 215 M395 235 L415 235 M395 265 L415 265 M395 290 L415 290"/>
+        </g>
+        <!-- center tall tower -->
+        <path d="M450 320 L450 160 L470 140 L490 160 L490 320"/>
+        <path d="M500 320 L500 230 L540 230 L540 150 L560 150 L560 200 L600 200 L600 320"/>
+        <!-- center windows -->
+        <g stroke-width=".8">
+          <path d="M455 170 L485 170 M455 190 L485 190 M455 210 L485 210 M455 230 L485 230 M455 250 L485 250 M455 270 L485 270 M455 290 L485 290 M455 310 L485 310"/>
+          <path d="M510 245 L530 245 M510 265 L530 265 M510 285 L530 285 M510 305 L530 305"/>
+          <path d="M545 165 L555 165 M545 180 L555 180 M570 215 L595 215 M570 235 L595 235 M570 255 L595 255 M570 275 L595 275 M570 295 L595 295"/>
+        </g>
+        <!-- right cluster -->
+        <path d="M640 320 L640 250 L680 250 L680 220 L720 220 L720 270 L760 270 L760 190 L800 190 L800 170 L840 170 L840 240 L880 240 L880 210 L920 210 L920 280 L960 280 L960 230 L1000 230 L1000 250 L1040 250 L1040 200 L1080 200 L1080 320"/>
+        <g stroke-width=".8">
+          <path d="M650 265 L670 265 M650 285 L670 285 M650 305 L670 305"/>
+          <path d="M690 235 L715 235 M690 255 L715 255 M690 275 L715 275 M690 295 L715 295"/>
+          <path d="M770 205 L795 205 M770 225 L795 225 M770 245 L795 245 M770 265 L795 265 M770 285 L795 285 M770 305 L795 305"/>
+          <path d="M810 185 L835 185 M810 205 L835 205 M810 225 L835 225 M810 255 L835 255 M810 285 L835 285"/>
+          <path d="M890 225 L915 225 M890 245 L915 245 M890 265 L915 265 M890 290 L915 290"/>
+          <path d="M970 245 L995 245 M970 270 L995 270 M970 295 L995 295"/>
+          <path d="M1050 215 L1075 215 M1050 235 L1075 235 M1050 260 L1075 260 M1050 285 L1075 285 M1050 305 L1075 305"/>
+        </g>
+        <!-- far right -->
+        <path d="M1100 320 L1100 240 L1140 240 L1140 210 L1180 210 L1180 260 L1220 260 L1220 230 L1260 230 L1260 190 L1300 190 L1300 320"/>
+        <g stroke-width=".8">
+          <path d="M1110 255 L1135 255 M1110 275 L1135 275 M1110 295 L1135 295"/>
+          <path d="M1150 225 L1175 225 M1150 245 L1175 245 M1150 270 L1175 270 M1150 295 L1175 295"/>
+          <path d="M1230 245 L1255 245 M1230 265 L1255 265 M1230 285 L1255 285 M1230 305 L1255 305"/>
+          <path d="M1270 205 L1295 205 M1270 225 L1295 225 M1270 250 L1295 250 M1270 275 L1295 275 M1270 300 L1295 300"/>
+        </g>
+      </g>
+
+      <!-- ground line -->
+      <line x1="0" y1="320" x2="1400" y2="320" stroke="#2A2D24" stroke-width="1.2"/>
+
+      <!-- trees -->
+      <g fill="#5C7A4F" opacity=".85">
+        <circle cx="20" cy="310" r="9"/>
+        <circle cx="430" cy="308" r="8"/>
+        <circle cx="610" cy="308" r="7"/>
+        <circle cx="990" cy="308" r="9"/>
+        <circle cx="1090" cy="310" r="7"/>
+        <circle cx="1330" cy="310" r="9"/>
+      </g>
+      <g stroke="#2A2D24" stroke-width="1" fill="none">
+        <path d="M20 320 L20 314"/><path d="M430 320 L430 314"/><path d="M610 320 L610 314"/><path d="M990 320 L990 314"/><path d="M1090 320 L1090 314"/><path d="M1330 320 L1330 314"/>
+      </g>
+
+      <!-- pin -->
+      <g transform="translate(540,80)">
+        <path d="M0 0 C -14 0, -14 18, 0 28 C 14 18, 14 0, 0 0 Z" fill="#B38B4A"/>
+        <circle cx="0" cy="10" r="5" fill="#F6F2EA"/>
+        <line x1="0" y1="28" x2="0" y2="70" stroke="#B38B4A" stroke-dasharray="2 3" stroke-width="1.2"/>
+      </g>
+      <g transform="translate(860,60)">
+        <path d="M0 0 C -12 0, -12 16, 0 24 C 12 16, 12 0, 0 0 Z" fill="#20392A"/>
+        <circle cx="0" cy="9" r="4" fill="#F6F2EA"/>
+        <line x1="0" y1="24" x2="0" y2="60" stroke="#20392A" stroke-dasharray="2 3" stroke-width="1.2"/>
+      </g>
+
+      <!-- small people silhouettes -->
+      <g fill="#2A2D24" opacity=".55">
+        <circle cx="270" cy="315" r="1.6"/><rect x="269" y="316" width="2" height="4"/>
+        <circle cx="700" cy="315" r="1.6"/><rect x="699" y="316" width="2" height="4"/>
+        <circle cx="1150" cy="315" r="1.6"/><rect x="1149" y="316" width="2" height="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="num">₱8B+</div><div class="lbl">Total transacted</div></div>
+    <div class="stat"><div class="num">1,500+</div><div class="lbl">Families served</div></div>
+    <div class="stat"><div class="num">15 yrs</div><div class="lbl">Philippine market</div></div>
+    <div class="stat"><div class="num">8–12%</div><div class="lbl">Avg. annual ROI</div></div>
+  </div>
+</header>
+
+<!-- ============ UNLOCK NUMBERS ============ -->
+<section id="invest">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Smart underwriting</div>
+      <h2>Unlock the numbers behind <em>every</em> property we recommend.</h2>
+      <p class="lede">We study comparables, rental yield, association dues, tax exposure and 10-year appreciation before we show you a single listing. You only see the best — the ones that hold value, cash-flow, or both.</p>
+      <div style="margin-top:28px">
+        <a class="btn btn-dark" href="#properties">Find the best for you →</a>
+      </div>
+    </div>
+
+    <div class="mini-cards">
+      <div class="mc tall">
+        <div class="photo"></div>
+        <span class="ph-pill">Featured</span>
+        <div class="photo-label">
+          <div class="ph-title">BGC High-Rise Condo</div>
+          <div class="ph-meta"><span>◎ Taguig, MM</span><span>62 sqm</span><span>1 BR</span></div>
+        </div>
+      </div>
+      <div class="mc ai">
+        <div class="ai-top">
+          <div class="ai-logo"><span class="logo-mark" style="width:22px;height:22px;font-size:12px;border-radius:6px">B</span>Best Buy</div>
+          <span class="ai-chip">Yield AI</span>
+        </div>
+        <div class="ai-title">Find your best-fit property</div>
+        <div class="ai-row">
+          <div class="ai-input"></div>
+          <div class="ai-btn">Search →</div>
+        </div>
+      </div>
+      <div class="mc trust">
+        <div class="bulb">✦</div>
+        <div>
+          <div class="num">95%</div>
+          <div class="lbl">Client trust score</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADVANTAGES ============ -->
+<section class="tight">
+  <div class="wrap adv-grid">
+    <div class="adv-cards">
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 7-8"/><path d="M14 7h6v6"/></svg></div>
+        <h3>Steady returns</h3>
+        <p>Cash-flowing units vetted for occupancy, rental comps and vacancy risk before we ever endorse them.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19h16M6 19V9l6-4 6 4v10"/><path d="M10 19v-6h4v6"/></svg></div>
+        <h3>Reliable growth</h3>
+        <p>Underwritten on 10-yr appreciation, zoning shifts and infrastructure pipelines — not hype.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Clear insights</h3>
+        <p>You get the full deal memo — cap rate, IRR, exit scenarios. No jargon, no surprises.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4v6c0 5-3.5 7.5-8 8-4.5-.5-8-3-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Expert guidance</h3>
+        <p>One seasoned agent, start to finish. No handoffs. Your goals drive every recommendation — not commissions.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V10l8-5 8 5v11"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Value preservation</h3>
+        <p>We pick properties that protect your peso — assets built to outlast cycles, not speculative flips.</p>
+      </div>
+      <div class="adv-card">
+        <div class="adv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <h3>Stress-free closing</h3>
+        <p>Reservation, bank financing, documents, turnover — we handle every step, including remote OFW clients.</p>
+      </div>
+    </div>
+
+    <div class="adv-right">
+      <div>
+        <div class="eyebrow">Why Best Buy</div>
+        <h2>Your real estate <em>investment</em> advantage.</h2>
+        <p>From curated listings to end-to-end handling, we simplify property investing so you can focus on what matters — growing your wealth and living well.</p>
+      </div>
+      <div style="margin-top:28px">
+        <a class="btn btn-dark" href="#properties">Find the best for you →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPERTIES ============ -->
+<section id="properties">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow">Handpicked listings</div>
+      <h2>Discover our top <em>investment</em> properties.</h2>
+      <p class="lede center">Off-market access, pre-selling allocations and resale opportunities across Metro Manila, Cavite, Laguna, Tagaytay and Cebu — vetted against our investor-grade checklist.</p>
+    </div>
+
+    <div class="props-grid" id="propsGrid"></div>
+
+    <div style="text-align:center;margin-top:40px">
+      <a class="btn btn-outline" href="#cerulean">View featured development →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED DEVELOPMENT: CERULEAN ============ -->
+<section id="cerulean" class="tight" style="padding-top:40px">
+  <div class="wrap">
+    <div class="cerulean-hero">
+      <div class="c-left">
+        <div class="eyebrow" style="color:#3B7A9E">Featured pre-selling development</div>
+        <h2>Cerulean Residences.<br/><em>General Trias, Cavite.</em></h2>
+        <p class="lede" style="margin-top:12px">A 25-hectare beach-inspired lifestyle estate by Century Properties. Live the resort lifestyle every day — 90 minutes from Makati via CAVITEX, three minutes from the future CALAX Governor's Drive toll plaza.</p>
+        <div class="c-pill-row">
+          <span class="c-pill"><b>25</b>ha master plan</span>
+          <span class="c-pill"><b>2030</b>completion</span>
+          <span class="c-pill"><b>2</b>house models</span>
+          <span class="c-pill"><b>PH1</b>now selling</span>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:28px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="#contact">Request price list &amp; floor plans →</a>
+          <a class="btn btn-outline" href="#cerulean-models">View house models</a>
+        </div>
+      </div>
+
+      <div class="c-right">
+        <div class="c-hero-art">
+          <svg viewBox="0 0 520 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="width:100%;height:100%">
+            <defs>
+              <linearGradient id="cerSky" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#D8ECF5"/>
+                <stop offset="1" stop-color="#F2F7FA"/>
+              </linearGradient>
+              <linearGradient id="cerSea" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#4E8AAB"/>
+                <stop offset="1" stop-color="#2E5F80"/>
+              </linearGradient>
+              <linearGradient id="cerSand" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#EAD9B4"/>
+                <stop offset="1" stop-color="#D9C198"/>
+              </linearGradient>
+            </defs>
+            <rect width="520" height="420" fill="url(#cerSky)"/>
+            <!-- sun -->
+            <circle cx="400" cy="100" r="44" fill="#F3E5C6"/>
+            <!-- distant hills -->
+            <path d="M0 220 Q 130 180 260 210 T 520 205 L 520 260 L 0 260 Z" fill="#B8D3DE" opacity=".7"/>
+            <path d="M0 240 Q 150 210 300 235 T 520 225 L 520 270 L 0 270 Z" fill="#9DBFCE" opacity=".75"/>
+            <!-- sea -->
+            <rect x="0" y="250" width="520" height="80" fill="url(#cerSea)"/>
+            <!-- wave lines -->
+            <g stroke="#fff" stroke-width="1" opacity=".35" fill="none">
+              <path d="M0 270 Q 40 266 80 270 T 160 270 T 240 270 T 320 270 T 400 270 T 520 270"/>
+              <path d="M0 290 Q 40 286 80 290 T 160 290 T 240 290 T 320 290 T 400 290 T 520 290"/>
+              <path d="M0 310 Q 40 306 80 310 T 160 310 T 240 310 T 320 310 T 400 310 T 520 310"/>
+            </g>
+            <!-- beach -->
+            <path d="M0 330 Q 260 310 520 330 L 520 420 L 0 420 Z" fill="url(#cerSand)"/>
+            <!-- palms -->
+            <g stroke="#2a4d38" stroke-width="2" fill="none">
+              <path d="M60 390 Q 58 350 62 320"/>
+              <path d="M62 320 Q 50 310 40 314"/>
+              <path d="M62 320 Q 74 308 86 312"/>
+              <path d="M62 320 Q 56 304 54 290"/>
+              <path d="M62 320 Q 70 302 78 294"/>
+            </g>
+            <g stroke="#2a4d38" stroke-width="2" fill="none">
+              <path d="M470 400 Q 468 360 472 330"/>
+              <path d="M472 330 Q 460 320 450 324"/>
+              <path d="M472 330 Q 484 318 496 322"/>
+              <path d="M472 330 Q 466 314 464 300"/>
+              <path d="M472 330 Q 480 312 488 304"/>
+            </g>
+            <!-- pool / house silhouette -->
+            <g transform="translate(170,290)">
+              <!-- roof -->
+              <path d="M0 40 L60 0 L150 0 L210 40 Z" fill="#2E5F80"/>
+              <!-- body -->
+              <rect x="10" y="40" width="190" height="70" fill="#F6F2EA"/>
+              <rect x="30" y="60" width="30" height="30" fill="#4E8AAB" opacity=".8"/>
+              <rect x="80" y="60" width="30" height="30" fill="#4E8AAB" opacity=".8"/>
+              <rect x="130" y="60" width="30" height="30" fill="#4E8AAB" opacity=".8"/>
+              <rect x="170" y="70" width="24" height="40" fill="#2E5F80"/>
+              <!-- pool -->
+              <ellipse cx="105" cy="130" rx="120" ry="16" fill="#7DB3CF"/>
+            </g>
+            <!-- location pin -->
+            <g transform="translate(260,70)">
+              <path d="M0 0 C -16 0, -16 20, 0 32 C 16 20, 16 0, 0 0 Z" fill="#B38B4A"/>
+              <circle cx="0" cy="11" r="6" fill="#F6F2EA"/>
+            </g>
+            <text x="260" y="145" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#2a4d38" letter-spacing="3">GENERAL TRIAS · CAVITE</text>
+          </svg>
+          <div class="c-badge-float">
+            <div class="eyebrow" style="color:#fff;opacity:.8">Developer</div>
+            <div style="font-family:'Fraunces',serif;font-size:18px;color:#fff;margin-top:2px">Century Properties</div>
+            <div style="font-size:11.5px;color:rgba(255,255,255,.7);margin-top:2px">35+ year legacy · PH real estate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Four S's ====== -->
+    <div class="c-ss-grid">
+      <div class="c-ss">
+        <div class="c-ss-ico">✦</div>
+        <div class="c-ss-tag">SLEEP</div>
+        <h4>Serene village</h4>
+        <p>A tranquil house &amp; lot community in a master-planned 25-hectare estate.</p>
+      </div>
+      <div class="c-ss">
+        <div class="c-ss-ico">≈</div>
+        <div class="c-ss-tag">SWIM</div>
+        <h4>Beach-inspired amenity</h4>
+        <p>Man-made beach pool, wave pool, waterslides, splash play and a beach lounge.</p>
+      </div>
+      <div class="c-ss">
+        <div class="c-ss-ico">◉</div>
+        <div class="c-ss-tag">SPORTS</div>
+        <h4>Indoor multisport</h4>
+        <p>Basketball, pickleball, volleyball, table tennis, gym, lap pool, indoor archery.</p>
+      </div>
+      <div class="c-ss">
+        <div class="c-ss-ico">◨</div>
+        <div class="c-ss-tag">SHOP</div>
+        <h4>Century Lifepark</h4>
+        <p>A commercial &amp; retail park just outside the village gate — essentials, dining, services.</p>
+      </div>
+    </div>
+
+    <!-- ====== Location & Accessibility ====== -->
+    <div class="c-two-col">
+      <div class="c-feature-card">
+        <div class="eyebrow">Progressive location · enduring value</div>
+        <h3 class="serif" style="font-size:28px;margin:8px 0 14px">Along Arnaldo Highway, Brgy. San Francisco, General Trias</h3>
+        <ul class="c-list">
+          <li><b>3 min</b> — future CALAX Governor's Drive toll plaza</li>
+          <li><b>35 min</b> — CAVITEX / Manila Expressway</li>
+          <li><b>90 min</b> — Makati CBD via CAVITEX</li>
+          <li><b>1 hr</b> — C5 Extension via Daang Radyal</li>
+        </ul>
+        <div class="c-list-title">Minutes from premier institutions</div>
+        <ul class="c-list small">
+          <li>Ateneo de Manila · General Trias campus (opening 2030)</li>
+          <li>UP Dasmariñas · groundbreaking held Sept 2024</li>
+          <li>DLSU Medical Center · 23 mins</li>
+          <li>SM City Dasmariñas, Vista Mall, Robinson's · 5–16 mins</li>
+        </ul>
+      </div>
+
+      <div class="c-feature-card alt">
+        <div class="eyebrow" style="color:#fff;opacity:.8">Why invest now</div>
+        <h3 class="serif" style="font-size:28px;margin:8px 0 14px;color:#fff">Foundational pricing. The next wave of value.</h3>
+        <p style="color:rgba(255,255,255,.8);font-size:15px;line-height:1.6">The optimal time to secure a master-planned property is during its pivotal development phase. The Cerulean Show Village and Century Lifepark begin construction <em>ahead</em> of the residential village — so you can see your future community taking shape from day one.</p>
+        <div class="c-invest-stats">
+          <div><div class="cn">2030</div><div class="cl">Turnover</div></div>
+          <div><div class="cn">PH 1</div><div class="cl">Now selling</div></div>
+          <div><div class="cn">3.06<span style="font-size:14px;opacity:.7">ha</span></div><div class="cl">Residential area</div></div>
+        </div>
+        <a class="btn btn-outline" style="margin-top:22px;background:#fff;border:none" href="#contact">Reserve a unit with Dexter →</a>
+      </div>
+    </div>
+
+    <!-- ====== House models ====== -->
+    <div id="cerulean-models" style="margin-top:56px">
+      <div class="section-head center">
+        <div class="eyebrow">House models</div>
+        <h2 style="font-size:38px">Two architectural choices.<br/><em>Bold</em>, contemporary, beach-calm.</h2>
+      </div>
+
+      <div class="c-models">
+        <div class="c-model">
+          <div class="c-model-art">
+            <svg viewBox="0 0 400 260" style="width:100%;height:100%">
+              <rect width="400" height="260" fill="#EEF4F8"/>
+              <!-- row of townvillas -->
+              <g>
+                <!-- unit 1 -->
+                <path d="M40 200 L40 130 L100 80 L100 200 Z" fill="#4E8AAB"/>
+                <rect x="40" y="130" width="60" height="70" fill="#F6F2EA"/>
+                <rect x="52" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="74" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="60" y="170" width="20" height="30" fill="#2E5F80"/>
+                <!-- unit 2 -->
+                <path d="M100 200 L100 130 L160 80 L160 200 Z" fill="#3B7A9E"/>
+                <rect x="100" y="130" width="60" height="70" fill="#F6F2EA"/>
+                <rect x="112" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="134" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="120" y="170" width="20" height="30" fill="#2E5F80"/>
+                <!-- unit 3 -->
+                <path d="M160 200 L160 130 L220 80 L220 200 Z" fill="#4E8AAB"/>
+                <rect x="160" y="130" width="60" height="70" fill="#F6F2EA"/>
+                <rect x="172" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="194" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="180" y="170" width="20" height="30" fill="#2E5F80"/>
+                <!-- unit 4 -->
+                <path d="M220 200 L220 130 L280 80 L280 200 Z" fill="#3B7A9E"/>
+                <rect x="220" y="130" width="60" height="70" fill="#F6F2EA"/>
+                <rect x="232" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="254" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="240" y="170" width="20" height="30" fill="#2E5F80"/>
+                <!-- unit 5 -->
+                <path d="M280 200 L280 130 L340 80 L340 200 Z" fill="#4E8AAB"/>
+                <rect x="280" y="130" width="60" height="70" fill="#F6F2EA"/>
+                <rect x="292" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="314" y="145" width="16" height="16" fill="#2E5F80" opacity=".7"/>
+                <rect x="300" y="170" width="20" height="30" fill="#2E5F80"/>
+              </g>
+              <!-- ground -->
+              <rect x="0" y="200" width="400" height="60" fill="#D9C198"/>
+              <!-- greenway -->
+              <rect x="40" y="215" width="300" height="6" fill="#7FA06A"/>
+              <circle cx="60" cy="230" r="5" fill="#7FA06A"/>
+              <circle cx="200" cy="235" r="6" fill="#7FA06A"/>
+              <circle cx="320" cy="230" r="5" fill="#7FA06A"/>
+              <text x="200" y="252" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5C7A4F" letter-spacing="2">PRIVATE GREENWAY · 2M WIDE</text>
+            </svg>
+          </div>
+          <div class="c-model-body">
+            <div class="eyebrow" style="color:#3B7A9E">Townvillas</div>
+            <h3 class="serif" style="font-size:26px;margin:6px 0 4px">The Marina</h3>
+            <p class="c-model-tag">Elegant connected townhomes with a private linear greenway backyard.</p>
+            <div class="c-specs">
+              <div><div class="cs-k">Floor area</div><div class="cs-v">77.80 sqm</div></div>
+              <div><div class="cs-k">Lot area</div><div class="cs-v">84–194 sqm</div></div>
+              <div><div class="cs-k">Bedrooms</div><div class="cs-v">2 + utility</div></div>
+              <div><div class="cs-k">Carport</div><div class="cs-v">2 vehicles</div></div>
+            </div>
+            <div class="c-feat">
+              <span>EV-ready</span><span>Perimeter fence &amp; gate</span><span>Expandable layout</span><span>Balcony</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-model">
+          <div class="c-model-art alt">
+            <svg viewBox="0 0 400 260" style="width:100%;height:100%">
+              <rect width="400" height="260" fill="#F2EADF"/>
+              <!-- single detached -->
+              <g transform="translate(80,40)">
+                <path d="M0 160 L0 80 L120 20 L240 80 L240 160 Z" fill="#B38B4A"/>
+                <rect x="0" y="80" width="240" height="80" fill="#F6F2EA"/>
+                <rect x="20" y="100" width="30" height="30" fill="#2E5F80" opacity=".8"/>
+                <rect x="70" y="100" width="30" height="30" fill="#2E5F80" opacity=".8"/>
+                <rect x="140" y="100" width="30" height="30" fill="#2E5F80" opacity=".8"/>
+                <rect x="190" y="100" width="30" height="30" fill="#2E5F80" opacity=".8"/>
+                <rect x="105" y="125" width="30" height="35" fill="#2E5F80"/>
+              </g>
+              <rect x="0" y="200" width="400" height="60" fill="#D9C198"/>
+              <!-- carport -->
+              <rect x="310" y="170" width="70" height="30" fill="#F6F2EA" stroke="#2a4d38" stroke-width="1"/>
+              <!-- tree -->
+              <circle cx="40" cy="190" r="14" fill="#7FA06A"/>
+              <circle cx="370" cy="210" r="10" fill="#7FA06A"/>
+              <text x="200" y="252" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#5C7A4F" letter-spacing="2">SINGLE-ATTACHED · CONVERTIBLE STUDY</text>
+            </svg>
+          </div>
+          <div class="c-model-body">
+            <div class="eyebrow" style="color:#B38B4A">Single-attached</div>
+            <h3 class="serif" style="font-size:26px;margin:6px 0 4px">The Coral</h3>
+            <p class="c-model-tag">A single-attached home with a convertible study — perfect for growing families.</p>
+            <div class="c-specs">
+              <div><div class="cs-k">Floor area</div><div class="cs-v">88.07 sqm</div></div>
+              <div><div class="cs-k">Lot area</div><div class="cs-v">108–189 sqm</div></div>
+              <div><div class="cs-k">Bedrooms</div><div class="cs-v">2 + study + utility</div></div>
+              <div><div class="cs-k">Carport</div><div class="cs-v">2 vehicles</div></div>
+            </div>
+            <div class="c-feat">
+              <span>EV-ready</span><span>Perimeter fence &amp; gate</span><span>Expandable layout</span><span>Laundry area</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c-cta-band">
+        <div>
+          <div class="eyebrow" style="color:rgba(255,255,255,.7)">Ready for the next wave?</div>
+          <div class="serif" style="font-size:30px;line-height:1.15;margin-top:6px">Secure your Cerulean unit at<br/><em>foundational</em> pricing.</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-outline" style="background:#fff;border:none" href="#contact">Request price list</a>
+          <a class="btn btn-primary" style="background:#B38B4A" href="#contact">Reserve a viewing →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="tight">
+  <div class="steps-section">
+    <div class="steps-head">
+      <div>
+        <div class="eyebrow">The process</div>
+        <h2>Invest with confidence in <em>three</em> simple steps.</h2>
+      </div>
+      <p>A transparent, data-driven workflow so you always know what's next, what it costs, and what to expect.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01 / Discover</div>
+        <div class="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+        <h3>Find properties that fit you.</h3>
+        <p>Developer briefs, goals, budget and timeline — then we curate a shortlist matched to your income, risk and OFW/residency status.</p>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02 / Evaluate</div>
+        <div class="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M10 20V4M16 20v-8M22 20h-20"/></svg></div>
+        <h3>Underwrite with real numbers.</h3>
+        <p>Full deal breakdown: turnover price, projected rent, association dues, CGT and worst-case exit — reviewed with you line by line.</p>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03 / Own</div>
+        <div class="step-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10l9-7 9 7v11H3z"/><path d="M9 21V12h6v9"/></svg></div>
+        <h3>Close, own, earn.</h3>
+        <p>We coordinate reservation, bank financing, documents and turnover — then stay on for rental placement and portfolio reviews.</p>
+        <div class="step-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow" style="color:#B38B4A">Social proof</div>
+      <h2 style="color:var(--ink)">Trusted by investors, <em>proven</em> by results.</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="testi-band">
+      <div class="t-grid">
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <div class="t-quote">"Dexter found us a pre-selling unit in BGC two years before turnover. It appraised 28% higher on handover. This wasn't luck — it was homework."</div>
+          <div class="t-author"><div class="t-avatar">MR</div><div><div class="t-name">Marco Reyes</div><div class="t-role">Investor · 3-unit portfolio</div></div></div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <div class="t-quote">"As a first-time buyer I expected pressure. I got patience, clear math and a home my family truly loves. The follow-through after turnover was the real surprise."</div>
+          <div class="t-author"><div class="t-avatar">AL</div><div><div class="t-name">Anna Liwanag</div><div class="t-role">Homeowner · Quezon City</div></div></div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <div class="t-quote">"I'm an OFW in Dubai. Dexter handled the paperwork, viewings, bank coordination — all remotely. Two years in, rent is exactly where he projected. Rare integrity."</div>
+          <div class="t-author"><div class="t-avatar">JD</div><div><div class="t-name">Jonas Delgado</div><div class="t-role">OFW investor · Dubai → Cebu</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about">
+    <div class="about-photo">
+      <span class="chip">Licensed · 15 years experience</span>
+      <div class="caption">
+        <div class="n">Dexter Soriano</div>
+        <div class="r">Founder · Best Buy Real Estate</div>
+      </div>
+    </div>
+    <div class="about-body">
+      <div class="eyebrow">About Dexter</div>
+      <h2>Fifteen years of<br/><em>honest</em> Philippine real estate.</h2>
+      <p class="lede">I built Best Buy Real Estate on one principle: help Filipinos — at home and abroad — make property decisions that preserve the value of their money. No pressure, no fluff, no hidden commissions. Just patient, investor-grade analysis applied to every home, condo and pre-selling unit I recommend. My clients return because the numbers hold.</p>
+      <div class="cred-row">
+        <div class="cred"><div class="n">15</div><div class="l">Years experience</div></div>
+        <div class="cred"><div class="n">₱8B+</div><div class="l">Transacted</div></div>
+        <div class="cred"><div class="n">6</div><div class="l">Regions covered</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="tight">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow">What we do</div>
+      <h2>Full-service, <em>end-to-end</em>.</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="svc-arrow">→</div>
+        <div><h3>Condominiums</h3><p>Prime BGC, Makati, Ortigas and Cebu units — selected for yield and resale demand.</p></div>
+      </div>
+      <div class="svc">
+        <div class="svc-arrow">→</div>
+        <div><h3>House &amp; Lot</h3><p>Family homes in gated communities — Cavite, Laguna, Tagaytay — with strong appreciation history.</p></div>
+      </div>
+      <div class="svc">
+        <div class="svc-arrow">→</div>
+        <div><h3>Pre-selling</h3><p>Early allocations at developer prices — vetted for build quality, timing and turnover track record.</p></div>
+      </div>
+      <div class="svc">
+        <div class="svc-arrow">→</div>
+        <div><h3>Investment advisory</h3><p>Portfolio reviews, rental placement and OFW-friendly end-to-end handling.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="contact-info">
+        <div class="eyebrow">Book a consult</div>
+        <h2>Let's talk about<br/>your <em>next</em> move.</h2>
+        <p class="lede" style="margin-top:14px">Free 30-minute call — on Zoom, Viber or WhatsApp. No pitch, no pressure. You'll leave with a clear view of what's achievable in your budget and timeline.</p>
+        <ul>
+          <li>
+            <div class="ci-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg></div>
+            <div><div class="ci-k">Email</div><div class="ci-v">sorianodexter@gmail.com</div></div>
+          </li>
+          <li>
+            <div class="ci-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1.2.4 2.3.8 3.4a2 2 0 0 1-.5 2.1L8 10.5a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1.1.4 2.2.7 3.4.8A2 2 0 0 1 22 17z"/></svg></div>
+            <div><div class="ci-k">Phone / Viber / WhatsApp</div><div class="ci-v">+63 917 576 8442</div></div>
+          </li>
+          <li>
+            <div class="ci-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div><div class="ci-k">Serving</div><div class="ci-v">Metro Manila, Cavite, Laguna, Cebu · OFW clients worldwide</div></div>
+          </li>
+          <li>
+            <div class="ci-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+            <div><div class="ci-k">Hours</div><div class="ci-v">Mon–Sat · 9am – 7pm PHT</div></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="lead" onsubmit="event.preventDefault();this.querySelector('.lead-note').textContent='Thanks — I\\'ll reply within 1 business day.';">
+        <div class="field">
+          <label>First name</label>
+          <input type="text" placeholder="Juan" required/>
+        </div>
+        <div class="field">
+          <label>Last name</label>
+          <input type="text" placeholder="Dela Cruz" required/>
+        </div>
+        <div class="field full">
+          <label>Email</label>
+          <input type="email" placeholder="you@email.com" required/>
+        </div>
+        <div class="field">
+          <label>Looking for</label>
+          <select>
+            <option>Condominium</option>
+            <option>House &amp; lot</option>
+            <option>Pre-selling</option>
+            <option>Investment property</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Budget (PHP)</label>
+          <select>
+            <option>Under ₱3M</option>
+            <option>₱3M – ₱8M</option>
+            <option>₱8M – ₱20M</option>
+            <option>₱20M+</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Tell me about your goals</label>
+          <textarea placeholder="e.g. first home for a family of four, BGC rental unit, OFW planning to retire in PH, etc."></textarea>
+        </div>
+        <div class="lead-submit full">
+          <div class="lead-note">By submitting, you agree to Best Buy Real Estate's privacy terms. We never share your info.</div>
+          <button class="btn btn-primary" type="submit">Request a free consult →</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><span class="logo-mark" style="background:var(--brass)">B</span>Best Buy</div>
+        <p>Premium Philippine real estate for families, first-time buyers, OFWs and serious investors. Built on honesty, market knowledge and long-term value.</p>
+        <div class="socials" style="margin-top:20px">
+          <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 1 0-4 0v7h-4v-13h4v2"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="foot">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#invest">Invest</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Condominiums</a></li>
+          <li><a href="#">House &amp; lot</a></li>
+          <li><a href="#">Pre-selling</a></li>
+          <li><a href="#">Investment advisory</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>Get in touch</h4>
+        <ul>
+          <li>sorianodexter@gmail.com</li>
+          <li>+63 917 576 8442</li>
+          <li>Metro Manila · Philippines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 Best Buy Real Estate · Dexter Soriano. All rights reserved.</div>
+      <div>Privacy · Terms · Disclosures</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING ============ -->
+<div class="floating" id="floatStack">
+  <div class="fab ms" title="Messenger"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.1 2 11.2c0 2.7 1.3 5.1 3.4 6.8v3.3l3.1-1.7c.9.3 1.9.4 2.9.4 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 12.4l-2.5-2.7-4.9 2.7 5.4-5.8 2.6 2.7 4.8-2.7z"/></svg></div>
+  <div class="fab wa" title="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4a10 10 0 0 0-16 11l-1 5 5-1a10 10 0 0 0 14-9 10 10 0 0 0-2-6zm-8 15a8 8 0 0 1-4-1l-3 1 1-3a8 8 0 1 1 6 3zm4-5c0-.2-.3-.4-.6-.5l-1.6-.8c-.3-.1-.5-.1-.7.2l-.7.8c-.1.2-.3.2-.6.1a6.4 6.4 0 0 1-3.2-2.8c-.2-.3-.1-.4.1-.6.2-.2.4-.5.5-.7.1-.2.1-.3 0-.5l-.8-1.8c-.2-.4-.4-.4-.6-.4h-.6c-.2 0-.5.1-.7.3-.7.7-1 1.7-1 2.6.2 1.5 1 2.9 2.2 4.1 1.5 1.5 3.2 2.6 4.7 2.7.5 0 1.2-.1 1.7-.5.4-.3.7-.7.7-1.2z"/></svg></div>
+  <div class="fab main" id="consultFab" title="Book a consult">Book a consult</div>
+</div>
+
+<!-- ============ TWEAKS ============ -->
+<div class="tweaks" id="tweaks">
+  <h5>Tweaks</h5>
+  <div class="tweak-row">
+    <label>Accent</label>
+    <div class="swatches" id="accentSwatches">
+      <div class="swatch on" data-accent="forest" style="background:#20392A"></div>
+      <div class="swatch" data-accent="navy" style="background:#13294B"></div>
+      <div class="swatch" data-accent="plum" style="background:#3E1F30"></div>
+      <div class="swatch" data-accent="brass" style="background:#8E6B32"></div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <label>Paper tone</label>
+    <div class="swatches" id="paperSwatches">
+      <div class="swatch on" data-paper="ivory" style="background:#F6F2EA;border:1px solid #ccc"></div>
+      <div class="swatch" data-paper="porcelain" style="background:#F2F0EC;border:1px solid #ccc"></div>
+      <div class="swatch" data-paper="stone" style="background:#ECE8E0;border:1px solid #ccc"></div>
+      <div class="swatch" data-paper="mist" style="background:#EEF1EE;border:1px solid #ccc"></div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <label>Serif</label>
+    <div class="swatches">
+      <div class="swatch on" data-serif="Fraunces" style="background:#fff;color:#000;font-family:Fraunces;display:grid;place-items:center;font-size:14px">Aa</div>
+      <div class="swatch" data-serif="Playfair Display" style="background:#fff;color:#000;font-family:serif;display:grid;place-items:center;font-size:14px">Aa</div>
+      <div class="swatch" data-serif="DM Serif Display" style="background:#fff;color:#000;font-family:'DM Serif Display',serif;display:grid;place-items:center;font-size:14px">Aa</div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <label>Headline variant</label>
+    <div class="swatches" style="flex-wrap:wrap;gap:6px">
+      <button class="btn btn-outline" style="padding:6px 10px;font-size:11px" data-head="0">Invest early.</button>
+      <button class="btn btn-outline" style="padding:6px 10px;font-size:11px" data-head="1">Preserve value.</button>
+      <button class="btn btn-outline" style="padding:6px 10px;font-size:11px" data-head="2">Find the best buy.</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ---- Properties data ---- */
+const PROPS = [
+  {
+    tag:'Resale', title:'Modern BGC 1BR condo',
+    loc:'Taguig, Metro Manila', price:'₱8.9M', cap:'5.4% yield',
+    bd:1, ba:1, sqft:'62 sqm',
+    stripe:['#c9c1a8','#b9b097']
+  },
+  {
+    tag:'Pre-selling', title:'Tagaytay ridge 2BR',
+    loc:'Tagaytay, Cavite', price:'₱6.2M', cap:'6.1% yield',
+    bd:2, ba:2, sqft:'78 sqm',
+    stripe:['#8aa0b8','#6e8aa4']
+  },
+  {
+    tag:'Off-market', title:'Family home, gated',
+    loc:'Sta. Rosa, Laguna', price:'₱18.5M', cap:'Strong appreciation',
+    bd:4, ba:3, sqft:'220 sqm',
+    stripe:['#c2a884','#a68c67']
+  }
+];
+
+function propImgSVG(c1,c2,label){
+  return `
+  <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%">
+    <defs>
+      <linearGradient id="g_${label}" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/>
+      </linearGradient>
+      <pattern id="p_${label}" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(135)">
+        <rect width="22" height="22" fill="url(#g_${label})"/>
+        <line x1="0" y1="0" x2="0" y2="22" stroke="rgba(255,255,255,.08)" stroke-width="8"/>
+      </pattern>
+    </defs>
+    <rect width="400" height="300" fill="url(#p_${label})"/>
+    <g opacity=".22" stroke="#fff" fill="none" stroke-width="1.2">
+      <path d="M60 220 L60 140 L110 110 L160 140 L160 220 Z"/>
+      <path d="M180 220 L180 160 L230 130 L280 160 L280 220 Z"/>
+      <path d="M300 220 L300 150 L340 125 L340 220"/>
+      <line x1="0" y1="220" x2="400" y2="220"/>
+      <rect x="72" y="160" width="18" height="18"/>
+      <rect x="95" y="160" width="18" height="18"/>
+      <rect x="72" y="185" width="18" height="18"/>
+      <rect x="95" y="185" width="18" height="18"/>
+    </g>
+    <text x="20" y="285" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(255,255,255,.55)" letter-spacing="2">PROPERTY IMAGE · ${label.toUpperCase()}</text>
+  </svg>`;
+}
+
+const grid = document.getElementById('propsGrid');
+grid.innerHTML = PROPS.map((p,i)=>`
+  <article class="prop">
+    <div class="prop-img">${propImgSVG(p.stripe[0],p.stripe[1],'prop'+i)}<span class="badge">${p.tag}</span><div class="fav">♡</div></div>
+    <div class="prop-body">
+      <h3>${p.title}</h3>
+      <div class="loc"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>${p.loc}</div>
+      <div class="meta">
+        <span>◧ ${p.sqft} sqft</span>
+        <span>⏀ ${p.bd} bd</span>
+        <span>◉ ${p.ba} ba</span>
+      </div>
+    </div>
+    <div class="prop-foot">
+      <div class="price">${p.price}<small>· ${p.cap}</small></div>
+      <a class="view" href="#">View →</a>
+    </div>
+  </article>
+`).join('');
+
+/* ---- Consult fab scroll ---- */
+document.getElementById('consultFab').addEventListener('click', ()=>{
+  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+});
+
+/* ---- Edit mode (Tweaks) ---- */
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent":"forest",
+  "paper":"ivory",
+  "serif":"Fraunces",
+  "headline":0
+}/*EDITMODE-END*/;
+let state = {...TWEAK_DEFAULTS};
+
+const ACCENTS = {
+  forest: {primary:'#20392A', primary2:'#16291E', moss:'#5C7A4F'},
+  navy:   {primary:'#13294B', primary2:'#0A1B33', moss:'#4A6FA5'},
+  plum:   {primary:'#3E1F30', primary2:'#2B1521', moss:'#8A5573'},
+  brass:  {primary:'#8E6B32', primary2:'#6D511F', moss:'#B38B4A'},
+};
+const PAPERS = {
+  ivory:     {ivory:'#F6F2EA', ivory2:'#EFEAE0', paper:'#FBF8F2'},
+  porcelain: {ivory:'#F2F0EC', ivory2:'#EBE7E0', paper:'#F9F7F2'},
+  stone:     {ivory:'#ECE8E0', ivory2:'#E4DFD2', paper:'#F5F1E6'},
+  mist:      {ivory:'#EEF1EE', ivory2:'#E5EAE4', paper:'#F4F7F3'},
+};
+const HEADLINES = [
+  {t:'Invest early.<br/>Choose <em>wisely</em>. Live well.', s:"Best Buy Real Estate helps buyers, investors, families, OFWs and first-time property seekers make smart property decisions that preserve the value of their money — in Metro Manila and across the Philippines."},
+  {t:'Preserve the <em>value</em><br/>of your money.', s:"We help Filipinos at home and abroad acquire properties that hold up across cycles — underwritten on real Philippine market data, not hype."},
+  {t:'Find the best buy.<br/>Every <em>single</em> time.', s:"15 years of Philippine real estate expertise, applied to every home, condo and pre-selling unit we recommend. No pressure. Just the right property, at the right price."}
+];
+
+function applyTweaks(){
+  const a = ACCENTS[state.accent], p = PAPERS[state.paper];
+  const r = document.documentElement;
+  r.style.setProperty('--forest',a.primary);
+  r.style.setProperty('--forest-2',a.primary2);
+  r.style.setProperty('--moss',a.moss);
+  r.style.setProperty('--ivory',p.ivory);
+  r.style.setProperty('--ivory-2',p.ivory2);
+  r.style.setProperty('--paper',p.paper);
+
+  if(state.serif !== 'Fraunces'){
+    const id='dynSerif';
+    let l=document.getElementById(id);
+    if(!l){l=document.createElement('link');l.id=id;l.rel='stylesheet';document.head.appendChild(l)}
+    l.href=`https://fonts.googleapis.com/css2?family=${state.serif.replace(/ /g,'+')}:wght@400;500;600&display=swap`;
+  }
+  document.querySelectorAll('.serif, h1, h2, h3, .logo').forEach(el=>{
+    el.style.fontFamily = `'${state.serif}', serif`;
+  });
+
+  const hero = document.querySelector('.hero-title');
+  const sub = document.querySelector('.hero-sub');
+  hero.innerHTML = HEADLINES[state.headline].t;
+  sub.textContent = HEADLINES[state.headline].s;
+
+  document.querySelectorAll('#accentSwatches .swatch').forEach(s=>s.classList.toggle('on', s.dataset.accent===state.accent));
+  document.querySelectorAll('#paperSwatches .swatch').forEach(s=>s.classList.toggle('on', s.dataset.paper===state.paper));
+  document.querySelectorAll('[data-serif]').forEach(s=>s.classList.toggle('on', s.dataset.serif===state.serif));
+}
+
+document.querySelectorAll('#accentSwatches .swatch').forEach(s=>{
+  s.addEventListener('click',()=>{ state.accent=s.dataset.accent; applyTweaks(); persist(); });
+});
+document.querySelectorAll('#paperSwatches .swatch').forEach(s=>{
+  s.addEventListener('click',()=>{ state.paper=s.dataset.paper; applyTweaks(); persist(); });
+});
+document.querySelectorAll('[data-serif]').forEach(s=>{
+  s.addEventListener('click',()=>{ state.serif=s.dataset.serif; applyTweaks(); persist(); });
+});
+document.querySelectorAll('[data-head]').forEach(s=>{
+  s.addEventListener('click',()=>{ state.headline=parseInt(s.dataset.head); applyTweaks(); persist(); });
+});
+
+function persist(){
+  window.parent.postMessage({type:'__edit_mode_set_keys', edits: state}, '*');
+}
+
+window.addEventListener('message', e=>{
+  const d=e.data||{};
+  if(d.type==='__activate_edit_mode') document.getElementById('tweaks').classList.add('open');
+  else if(d.type==='__deactivate_edit_mode') document.getElementById('tweaks').classList.remove('open');
+});
+window.parent.postMessage({type:'__edit_mode_available'}, '*');
+
+applyTweaks();
+</script>
+</body>
+</html>

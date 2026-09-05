@@ -330,7 +330,7 @@
 <!-- ============ NAV ============ -->
 <div class="nav-shell">
   <div class="wrap nav">
-    <a href="#" class="logo"><span class="logo-mark">B</span>Best Buy</a>
+    <a href="#home" class="logo"><span class="logo-mark">B</span>Best Buy</a>
     <nav class="nav-links">
       <a href="#home" class="active">Home</a>
       <a href="#properties">Properties</a>
@@ -339,7 +339,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-ghost" href="#">Sign in</a>
+      <a class="btn btn-ghost" href="#properties">Browse homes</a>
       <a class="btn btn-primary" href="#contact">Book a consult</a>
     </div>
   </div>
@@ -999,22 +999,22 @@
         </ul>
       </div>
 
-      <form class="lead" onsubmit="event.preventDefault();this.querySelector('.lead-note').textContent='Thanks — I\\'ll reply within 1 business day.';">
+      <form class="lead" id="leadForm">
         <div class="field">
           <label>First name</label>
-          <input type="text" placeholder="Juan" required/>
+          <input name="firstName" type="text" placeholder="Juan" required/>
         </div>
         <div class="field">
           <label>Last name</label>
-          <input type="text" placeholder="Dela Cruz" required/>
+          <input name="lastName" type="text" placeholder="Dela Cruz" required/>
         </div>
         <div class="field full">
           <label>Email</label>
-          <input type="email" placeholder="you@email.com" required/>
+          <input name="email" type="email" placeholder="you@email.com" required/>
         </div>
         <div class="field">
           <label>Looking for</label>
-          <select>
+          <select name="propertyType">
             <option>Condominium</option>
             <option>House &amp; lot</option>
             <option>Pre-selling</option>
@@ -1024,7 +1024,7 @@
         </div>
         <div class="field">
           <label>Budget (PHP)</label>
-          <select>
+          <select name="budget">
             <option>Under ₱3M</option>
             <option>₱3M – ₱8M</option>
             <option>₱8M – ₱20M</option>
@@ -1033,7 +1033,7 @@
         </div>
         <div class="field full">
           <label>Tell me about your goals</label>
-          <textarea placeholder="e.g. first home for a family of four, BGC rental unit, OFW planning to retire in PH, etc."></textarea>
+          <textarea name="goals" placeholder="e.g. first home for a family of four, BGC rental unit, OFW planning to retire in PH, etc."></textarea>
         </div>
         <div class="lead-submit full">
           <div class="lead-note">By submitting, you agree to Best Buy Real Estate's privacy terms. We never share your info.</div>
@@ -1203,10 +1203,34 @@ grid.innerHTML = PROPS.map((p,i)=>`
     </div>
     <div class="prop-foot">
       <div class="price">${p.price}<small>· ${p.cap}</small></div>
-      <a class="view" href="#">View →</a>
+      <a class="view" href="#contact" data-property="${p.title}">Ask about this →</a>
     </div>
   </article>
 `).join('');
+
+/* ---- Lead form: sends completed inquiries directly to WhatsApp ---- */
+document.getElementById('leadForm').addEventListener('submit', (event) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const data = new FormData(form);
+  const message = [
+    'Hello Dexter! I would like a free property consultation.',
+    '',
+    `Name: ${data.get('firstName')} ${data.get('lastName')}`,
+    `Email: ${data.get('email')}`,
+    `Looking for: ${data.get('propertyType')}`,
+    `Budget: ${data.get('budget')}`,
+    `Goals: ${data.get('goals') || 'Not specified'}`
+  ].join('\\n');
+  window.open(`https://wa.me/639175768442?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+  form.querySelector('.lead-note').textContent = 'Opening WhatsApp so your inquiry goes directly to Dexter.';
+});
+
+document.querySelectorAll('[data-property]').forEach((link) => {
+  link.addEventListener('click', () => {
+    document.querySelector('[name="goals"]').value = `I want details about: ${link.dataset.property}.`;
+  });
+});
 
 /* ---- Consult fab scroll ---- */
 document.getElementById('consultFab').addEventListener('click', ()=>{
